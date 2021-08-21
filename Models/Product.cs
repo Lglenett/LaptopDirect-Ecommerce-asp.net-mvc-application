@@ -13,10 +13,15 @@ namespace LaptopDirect.Models
         public int Id { get; set; }
 
         public string Name { get; set; }
+        [Display(Name = "Name")]
         public string Description { get; set; }
+        [Display(Name = "Description")]
         public double Price { get; set; }
+        [Display(Name = "Price")]
         public string ImageURL { get; set; }
+        [Display(Name = "Profile Picture URL")]
         public string Specification { get; set; }
+        [Display(Name = "Specification")]
         public LaptopBrand LaptopBrand { get; set; }
     }
 }
