@@ -19,27 +19,22 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                       <li class="navbar-nav flex-grow-1">
-                           <a class="nav-link text-dark" asp-controller="Products" asp-action="Index" > <i class=" bi bi-laptop"></i>Laptops</a>
-                       </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="button" aria-haspopup="true" aria-expanded="false">
-                                <i class="bi bi-gear"></i> Management
-                            </a>
-                            
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" asp-controller="Products" asp-action="Index"> <i class="bi bi-laptop"></i>Products</a>
-                            </div>
+                        <li class="navbar-nav flex-grow-1">
+                            <a class="nav-link text-dark" asp-controller="Products" asp-action="Index"> <i class=" bi bi-laptop"></i>Laptops</a>
                         </li>
                     </ul>
+                </div>
 
                     <form class="form-inline my-2 my-lg-0" asp-controller="Products" asp-action="Filter" style="padding-right:25px">
                         <input name="searchString" type="text" class="form-control" placeholder="Search for a Laptop..." />
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> <i class="bi bi-search"></i></button>
                     </form>
 
-                </div>
+                    <div>
+                        <a class="btn btn-outline-primary float-right text-primary" style="margin-left: 8px;"> <i class="bi bi-person-plus"></i>  Register</a>
+                        <a class="btn btn-outline-success float-right text-success"> <i class="bi bi-box-arrow-in-right"></i>  Log In</a>
+                    </div>
+                
             </div>
         </nav>
     </header>

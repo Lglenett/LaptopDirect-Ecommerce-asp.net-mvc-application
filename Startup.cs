@@ -1,4 +1,5 @@
 using LaptopDirect.Data;
+using LaptopDirect.Data.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,6 +28,9 @@ namespace LaptopDirect
         {
             //DbContext Configuration
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
+
+            //Services Configuration
+            services.AddScoped<IProductsService, ProductsService>();
 
 
             services.AddControllersWithViews();
